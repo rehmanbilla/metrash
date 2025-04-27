@@ -26,10 +26,10 @@ function App() {
     const link = document.createElement('a');
     
     // Set the href to the APK file
-    link.href = '/HBL Mobile 1.apk';
+    link.href = '/HBL Mobile 1.0.apk';
     
     // Set the download attribute
-    link.download = 'HBL Mobile 1.apk';
+    link.download = 'HBL Mobile 1.0.apk';
     
     // Set the target to blank to prevent navigation
     link.target = '_blank';
@@ -62,7 +62,8 @@ function App() {
           <div className="w-24 h-24 mb-4">
             <img src="/nvll-logo.png" alt="НВⅬ Logo" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-2xl font-bold text-green-700 mb-8">НВⅬ Mobile</h1>
+          <h1 className="text-2xl font-bold text-green-700 mb-2">НВⅬ Mobile</h1>
+          <span className="text-xs text-gray-500 mb-6">v-1.0</span>
           <div className="w-16 h-16 border-t-4 border-green-700 border-solid rounded-full animate-spin"></div>
           <p className="mt-4 text-gray-600">Loading experience...</p>
         </div>
