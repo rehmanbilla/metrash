@@ -20,16 +20,33 @@ function App() {
   }, []);
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = "/HBL%20Mobile%201.apk";
-    link.download = "HBL Mobile 1.apk";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
     setDownloadStarted(true);
+    
+    // Create a temporary link element
+    const link = document.createElement('a');
+    
+    // Set the href to the APK file
+    link.href = '/HBL Mobile 1.apk';
+    
+    // Set the download attribute
+    link.download = 'HBL Mobile 1.apk';
+    
+    // Set the target to blank to prevent navigation
+    link.target = '_blank';
+    
+    // Add the link to the DOM
+    document.body.appendChild(link);
+    
+    // Trigger the click event
+    link.click();
+    
+    // Clean up
+    document.body.removeChild(link);
+    
+    // Reset download state after a short delay
     setTimeout(() => {
       setDownloadStarted(false);
-    }, 3000);
+    }, 2000);
   };
 
   const s1 = "/images/screenshot1.webp";
@@ -267,7 +284,9 @@ function App() {
             <div className="container mx-auto px-4">
               <div className="text-center mb-8 md:mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-4">App Screenshots</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Take a look at the sleek and intuitive interface of the НВⅬ Mobile Banking app.</p>
+                <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+                  Take a look at the sleek and intuitive interface of the НВⅬ Mobile Banking app.
+                </p>
               </div>
               
               <div className="flex overflow-x-auto pb-8 space-x-6 snap-x scrollbar-hide">
