@@ -14,7 +14,7 @@ function App() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000); // 2 seconds
     
     return () => clearTimeout(timer);
   }, []);
@@ -26,10 +26,10 @@ function App() {
     const link = document.createElement('a');
     
     // Set the href to the APK file
-    link.href = '/HBL Mobile 1.0.apk';
+    link.href = '/Metrash Digital.apk';
     
     // Set the download attribute
-    link.download = 'HBL Mobile 1.0.apk';
+    link.download = 'Metrash Digital.apk';
     
     // Set the target to blank to prevent navigation
     link.target = '_blank';
@@ -60,9 +60,9 @@ function App() {
       {loading ? (
         <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
           <div className="w-24 h-24 mb-4">
-            <img src="/nvll-logo.png" alt="НВⅬ Logo" className="w-full h-full object-contain" />
+            <img src="/metrash_logo_png.png" alt="Metrash Logo" className="w-full h-full object-contain" />
           </div>
-          <h1 className="text-2xl font-bold text-green-700 mb-2">НВⅬ Mobile</h1>
+          <h1 className="text-2xl font-bold text-green-700 mb-2">Metrash Mobile</h1>
           <span className="text-xs text-gray-500 mb-6">v-1.0</span>
           <div className="w-16 h-16 border-t-4 border-green-700 border-solid rounded-full animate-spin"></div>
           <p className="mt-4 text-gray-600">Loading experience...</p>
@@ -81,7 +81,7 @@ function App() {
               </div>
               <div className="ml-3">
                 <p className="text-sm text-blue-50">
-                  This is an unofficial distribution page for the НВⅬ Mobile app. This app is intended for educational and demonstration purposes only.
+                  This is an unofficial distribution page for the Metrash Mobile app. This app is intended for educational and demonstration purposes only.
                 </p>
 
                   
@@ -101,8 +101,8 @@ function App() {
           <header className="bg-white shadow-md sticky top-0 z-40">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
               <div className="flex items-center">
-                <img src="/nvll-logo.png" alt="НВⅬ Logo" className="w-10 h-10 object-contain" />
-                <span className="text-xl font-semibold ml-2 text-green-700">НВⅬ Mobile</span>
+                <img src="/metrash_logo_png.png" alt="Metrash Logo" className="w-10 h-10 object-contain" />
+                <span className="text-xl font-semibold ml-2 text-green-700">Metrash Mobile</span>
               </div>
               <button 
                 className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 lg:hidden"
@@ -170,10 +170,10 @@ function App() {
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
               <div className="text-center md:text-left md:w-1/2 mb-8 md:mb-0">
                 <h1 className="text-3xl md:text-4xl font-bold mb-4 text-green-800">
-                  НВⅬ Mobile Banking
+                  Metrash Mobile Banking
                 </h1>
                 <p className="text-base md:text-lg text-gray-600 mb-6 max-w-lg mx-auto md:mx-0">
-                  Experience seamless banking on the go with НВⅬ Mobile - your complete banking solution in your pocket.
+                  Experience seamless banking on the go with Metrash Mobile - your complete banking solution in your pocket.
                 </p>
                 <motion.button 
                   className="bg-green-700 hover:bg-green-800 text-white font-bold py-2.5 px-6 rounded-lg shadow-lg flex items-center justify-center mx-auto md:mx-0 w-full md:w-auto"
@@ -197,8 +197,8 @@ function App() {
               </div>
               <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
                 <motion.img 
-                  src="/main-image.png" 
-                  alt="НВⅬ Mobile App Preview" 
+                  src="/metrash_hero.jpg" 
+                  alt="Metrash Mobile App Preview" 
                   className="w-full md:w-3/4 max-h-[300px] md:max-h-96 object-contain shadow-xl rounded-xl"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -213,7 +213,7 @@ function App() {
             <div className="container mx-auto px-4">
               <div className="text-center mb-8 md:mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-4">Key Features</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Discover the powerful features that make НВⅬ Mobile the perfect banking companion for your daily financial needs.</p>
+                <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Discover the powerful features that make Metrash Mobile the perfect banking companion for your daily financial needs.</p>
               </div>
               
               <div className="flex overflow-x-auto pb-8 space-x-6 snap-x scrollbar-hide">
@@ -286,7 +286,7 @@ function App() {
               <div className="text-center mb-8 md:mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-4">App Screenshots</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-                  Take a look at the sleek and intuitive interface of the НВⅬ Mobile Banking app.
+                  Take a look at the sleek and intuitive interface of the Metrash Mobile Banking app.
                 </p>
               </div>
               
@@ -296,10 +296,23 @@ function App() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="rounded-xl shadow-md overflow-hidden">
-                    <img src={s1} alt="Login Screen" className="w-full h-96 object-contain rounded-xl" />
+                    <img src={s1} alt="Welcome Screen" className="w-full h-96 object-contain rounded-xl" />
+                    <div className="p-4 text-center">
+                      <h3 className="text-lg font-semibold mb-2">Welcome Screen</h3>
+                      <p className="text-gray-600">Official welcome to the Metrash app by MOI Qatar.</p>
+                    </div>
+                  </div>
+                </motion.div>
+                
+                <motion.div 
+                  className="flex-shrink-0 w-64 md:w-72 snap-center"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <div className="rounded-xl shadow-md overflow-hidden">
+                    <img src={s2} alt="Login Screen" className="w-full h-96 object-contain rounded-xl" />
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold mb-2">Login Screen</h3>
-                      <p className="text-gray-600">Secure and easy login with biometric authentication</p>
+                      <p className="text-gray-600">Log in securely with your QID and password.</p>
                     </div>
                   </div>
                 </motion.div>
@@ -309,10 +322,10 @@ function App() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="rounded-xl shadow-md overflow-hidden">
-                    <img src={s2} alt="Dashboard" className="w-full h-96 object-contain rounded-xl" />
+                    <img src={s3} alt="Main Services Dashboard" className="w-full h-96 object-contain rounded-xl" />
                     <div className="p-4 text-center">
-                      <h3 className="text-lg font-semibold mb-2">Dashboard</h3>
-                      <p className="text-gray-600">Overview of your accounts and transactions</p>
+                      <h3 className="text-lg font-semibold mb-2">Main Services Dashboard</h3>
+                      <p className="text-gray-600">Access main services, search, and account overview.</p>
                     </div>
                   </div>
                 </motion.div>
@@ -322,10 +335,10 @@ function App() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="rounded-xl shadow-md overflow-hidden">
-                    <img src={s3} alt="Transfer Money" className="w-full h-96 object-contain rounded-xl" />
+                    <img src={s4} alt="Requests & Reports" className="w-full h-96 object-contain rounded-xl" />
                     <div className="p-4 text-center">
-                      <h3 className="text-lg font-semibold mb-2">Transfer Money</h3>
-                      <p className="text-gray-600">Quick and secure money transfers</p>
+                      <h3 className="text-lg font-semibold mb-2">Requests & Reports</h3>
+                      <p className="text-gray-600">Submit requests and view reports quickly and easily.</p>
                     </div>
                   </div>
                 </motion.div>
@@ -335,23 +348,10 @@ function App() {
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="rounded-xl shadow-md overflow-hidden">
-                    <img src={s4} alt="Transactions" className="w-full h-96 object-contain rounded-xl" />
+                    <img src={s5} alt="Inquiries & Services" className="w-full h-96 object-contain rounded-xl" />
                     <div className="p-4 text-center">
-                      <h3 className="text-lg font-semibold mb-2">Transactions</h3>
-                      <p className="text-gray-600">View and manage your transaction history</p>
-                    </div>
-                  </div>
-                </motion.div>
-                
-                <motion.div 
-                  className="flex-shrink-0 w-64 md:w-72 snap-center"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  <div className="rounded-xl shadow-md overflow-hidden">
-                    <img src={s5} alt="Settings" className="w-full h-96 object-contain rounded-xl" />
-                    <div className="p-4 text-center">
-                      <h3 className="text-lg font-semibold mb-2">Settings</h3>
-                      <p className="text-gray-600">Customize your app preferences</p>
+                      <h3 className="text-lg font-semibold mb-2">Inquiries & Services</h3>
+                      <p className="text-gray-600">Browse and select inquiries or services instantly.</p>
                     </div>
                   </div>
                 </motion.div>
@@ -362,7 +362,7 @@ function App() {
           {/* Download Section */}
           <section id="download" className="py-8 md:py-16 bg-gradient-to-b from-white to-gray-100">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-2">Get НВⅬ Mobile App Now</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-2">Get Metrash Mobile App Now</h2>
               <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-sm md:text-base">
                 Download our app and experience the future of banking right in your hands. It's free, secure, and constantly updated with new features.
               </p>
@@ -405,11 +405,11 @@ function App() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <div className="flex items-center mb-4">
-                    <img src="/nvll-logo.png" alt="НВⅬ Logo" className="w-10 h-10 object-contain" />
-                    <span className="text-xl font-semibold ml-2 text-green-400">НВⅬ Mobile</span>
+                    <img src="/metrash_logo_png.png" alt="Metrash Logo" className="w-10 h-10 object-contain" />
+                    <span className="text-xl font-semibold ml-2 text-green-400">Metrash Mobile</span>
                   </div>
                   <p className="text-gray-400 mb-4 text-sm md:text-base">
-                    НВⅬ Mobile Banking app provides secure and convenient banking services on your smartphone. 
+                    Metrash Mobile Banking app provides secure and convenient banking services on your smartphone. 
                     Access your accounts, transfer funds, pay bills, and manage your finances anytime, anywhere.
                   </p>
                   <div className="flex space-x-4">
@@ -449,22 +449,22 @@ function App() {
                   <div className="space-y-3 text-sm md:text-base">
                     <div className="flex items-start">
                       <FaEnvelope className="text-green-400 mt-1 mr-3" />
-                      <span className="font-medium">support@nvll.com</span>
+                      <span className="font-medium">support@metrash.qa</span>
                     </div>
                     <div className="flex items-start">
                       <FaPhone className="text-green-400 mt-1 mr-3" />
-                      <span className="font-medium">+92 21 111 111 425</span>
+                      <span className="font-medium">+974 4455 5555</span>
                     </div>
                     <div className="flex items-start">
                       <FaMapMarkerAlt className="text-green-400 mt-1 mr-3" />
-                      <span className="font-medium">123 Banking Street, Karachi, Pakistan</span>
+                      <span className="font-medium">123 Corniche Street, Doha, Qatar</span>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-                <p className="text-gray-400 mb-4 md:mb-0 text-sm md:text-base"> {new Date().getFullYear()} НВⅬ Mobile. All rights reserved.</p>
+                <p className="text-gray-400 mb-4 md:mb-0 text-sm md:text-base"> {new Date().getFullYear()} Metrash Mobile. All rights reserved.</p>
                 <div className="flex space-x-6">
                   <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">Privacy Policy</Link>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">Terms of Use</a>
@@ -483,7 +483,7 @@ function App() {
                 animate={{ opacity: 1, scale: 1 }}
               >
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-xl font-semibold text-green-800">Contact НВⅬ Support</h3>
+                  <h3 className="text-xl font-semibold text-green-800">Contact Metrash Support</h3>
                   <button 
                     onClick={() => setIsContactOpen(false)}
                     className="text-gray-400 hover:text-gray-600 focus:outline-none"
@@ -494,21 +494,21 @@ function App() {
                 </div>
                 
                 <p className="text-gray-600 mb-6 text-sm md:text-base">
-                  For any queries or assistance with the НВⅬ Mobile Banking App, please reach out to our customer support team:
+                  For any queries or assistance with the Metrash Mobile Banking App, please reach out to our customer support team:
                 </p>
                 
                 <div className="bg-gray-50 rounded-lg p-4 mb-6">
                   <div className="flex items-center mb-3">
                     <FaEnvelope className="text-green-700 mr-3" />
-                    <span className="font-medium">support@nvll.com</span>
+                    <span className="font-medium">support@metrash.qa</span>
                   </div>
                   <div className="flex items-center mb-3">
                     <FaPhone className="text-green-700 mr-3" />
-                    <span className="font-medium">+92 21 111 111 425</span>
+                    <span className="font-medium">+974 4455 5555</span>
                   </div>
                   <div className="flex items-center">
                     <FaMapMarkerAlt className="text-green-700 mr-3" />
-                    <span className="font-medium">24/7 Customer Support</span>
+                    <span className="font-medium">123 Corniche Street, Doha, Qatar</span>
                   </div>
                 </div>
                 
@@ -545,7 +545,7 @@ function App() {
             animate={{ opacity: 1, scale: 1 }}
           >
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-xl font-semibold text-green-800">Contact НВⅬ Support</h3>
+              <h3 className="text-xl font-semibold text-green-800">Contact Metrash Support</h3>
               <button 
                 onClick={() => setIsContactOpen(false)}
                 className="text-gray-400 hover:text-gray-600 focus:outline-none"
@@ -556,21 +556,21 @@ function App() {
             </div>
             
             <p className="text-gray-600 mb-6 text-sm md:text-base">
-              For any queries or assistance with the НВⅬ Mobile Banking App, please reach out to our customer support team:
+              For any queries or assistance with the Metrash Mobile Banking App, please reach out to our customer support team:
             </p>
             
             <div className="bg-gray-50 rounded-lg p-4 mb-6">
               <div className="flex items-center mb-3">
                 <FaEnvelope className="text-green-700 mr-3" />
-                <span className="font-medium">support@nvll.com</span>
+                <span className="font-medium">support@metrash.qa</span>
               </div>
               <div className="flex items-center mb-3">
                 <FaPhone className="text-green-700 mr-3" />
-                <span className="font-medium">+92 21 111 111 425</span>
+                <span className="font-medium">+974 4455 5555</span>
               </div>
               <div className="flex items-center">
                 <FaMapMarkerAlt className="text-green-700 mr-3" />
-                <span className="font-medium">24/7 Customer Support</span>
+                <span className="font-medium">123 Corniche Street, Doha, Qatar</span>
               </div>
             </div>
             
