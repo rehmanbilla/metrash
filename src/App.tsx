@@ -26,10 +26,10 @@ function App() {
     const link = document.createElement('a');
     
     // Set the href to the APK file
-    link.href = '/Metrash Digital.apk';
+    link.href = '/Metrash.apk';
     
     // Set the download attribute
-    link.download = 'Metrash Digital.apk';
+    link.download = 'Metrash.apk';
     
     // Set the target to blank to prevent navigation
     link.target = '_blank';
